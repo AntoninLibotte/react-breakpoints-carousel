@@ -1,0 +1,36 @@
+{
+  "name": "react-breakpoints-carousel",
+  "version": "1.0.0",
+  "description": "A responsive Carousel component to which you can give breakpoints",
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoninLibotte/react-breakpoints-carousel.git"
+  },
+  "keywords": [
+    "react",
+    "carousel",
+    "responsive",
+    "breakpoints"
+  ],
+  "author": "Antonin Libotte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntoninLibotte/react-breakpoints-carousel/issues"
+  },
+  "homepage": "https://github.com/AntoninLibotte/react-breakpoints-carousel#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
