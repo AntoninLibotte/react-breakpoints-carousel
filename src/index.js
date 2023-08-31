@@ -4,7 +4,15 @@ function useCurrentBreakpoint(itemsPerPage = []) {
     const [currentBreakpoint, setCurrentBreakpoint] = useState(itemsPerPage[0]);
 
     function handleResize() {
-        setCurrentBreakpoint(itemsPerPage.findLast(i => i[0] <= window.innerWidth));
+        let value;
+        for (let index = itemsPerPage.length - 1; index >= 0; index--) {
+            const element = itemsPerPage[index];
+            if (element[0] <= window.innerWidth) {
+                value = element;
+                break;
+            }
+        }
+        setCurrentBreakpoint(value);
     }
 
     useEffect(() => {
